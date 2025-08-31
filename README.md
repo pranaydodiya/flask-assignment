@@ -1,84 +1,91 @@
-# Project Title
+Flask Assignment - Student Registration and Login System
+=======================================================
 
-A brief description of what your project does and its purpose.
+Project Overview
+----------------
+This is a simple Flask-based web application for student registration and login. 
+It demonstrates user authentication and session management using Flask.
 
----
+The project contains:
+- Registration Page
+- Login Page
+- Welcome Page (after successful login)
+- Session-based authentication
 
-## 📂 Project Structure
+Features
+--------
+1. Register a new user with username and password
+2. Secure password storage using hashing
+3. User login with validation
+4. Session handling to keep users logged in
+5. Logout functionality
 
-.
-├── templates/ # HTML templates (for Flask if applicable)
-├── app.py # Main application file
-├── data.json # JSON data file
-├── document.pdf # Project-related document
-├── README.md # Project documentation
+Technologies Used
+-----------------
+- Python (Flask framework)
+- HTML (Frontend)
+- CSS (Styling)
+- Jinja2 Templating
+- Git & GitHub for version control
 
-yaml
-Copy code
+Project Structure
+-----------------
+flask-assignment/
+│
+├── app.py              # Main Flask application
+├── templates/          # HTML templates
+│   ├── register.html   # Registration page
+│   ├── login.html      # Login page
+│   ├── welcome.html    # Welcome page after login
+│
+├── static/             # CSS or images if needed
+│   └── style.css
+│
+└── README.txt          # Project documentation
 
----
+Installation and Setup
+----------------------
+1. Clone the repository:
+   git clone https://github.com/pranaydodiya/flask-assignment.git
 
-## 🚀 Features
+2. Navigate to the project folder:
+   cd flask-assignment
 
-- Load and manage data from `data.json`.
-- Web interface using Flask and Jinja templates (if Flask project).
-- Exports/uses PDF (`document.pdf`).
-- Simple and modular project structure.
+3. Create a virtual environment:
+   python -m venv venv
 
----
+4. Activate the environment:
+   - Windows: venv\Scripts\activate
+   - Linux/Mac: source venv/bin/activate
 
-## 🛠️ Installation & Setup
+5. Install required packages:
+   pip install flask
 
-1. **Clone the repository**  
-   ```bash
-   git clone https://github.com/your-username/your-repo.git
-   cd your-repo
-Create a virtual environment (optional but recommended)
+6. Run the application:
+   python app.py
 
-bash
-Copy code
-python -m venv venv
-source venv/bin/activate   # On Linux/Mac
-venv\Scripts\activate      # On Windows
-Install dependencies
+7. Open in browser:
+   http://127.0.0.1:5000/
 
-bash
-Copy code
-pip install -r requirements.txt
-Run the application
+Git Commands Used
+-----------------
+echo "# flask-assignment" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/pranaydodiya/flask-assignment.git
+git push -u origin main
 
-bash
-Copy code
-python app.py
-📑 Usage
-Open the app in your browser at http://127.0.0.1:5000/.
+Future Improvements
+-------------------
+- Database integration (SQLite/MySQL)
+- Email verification for signup
+- Password reset functionality
+- Deployment on cloud (Heroku/AWS)
 
-The app will load data from data.json.
-
-You can update templates in the templates/ folder.
-
-Refer to document.pdf for detailed documentation.
-
-📦 Requirements
-Create a requirements.txt file with the following (if Flask app):
-
-nginx
-Copy code
-flask
-Add more libraries if used.
-
-Generate it with:
-
-bash
-Copy code
-pip freeze > requirements.txt
-🤝 Contributing
-Fork this repository
-
-Create your feature branch (git checkout -b feature-name)
-
-Commit changes (git commit -m 'Add new feature')
-
-Push to the branch (git push origin feature-name)
-
-Open a Pull Request
+Author
+------
+Pranay Dodiya
+B.Tech Information Technology (2022-2026)
+Birla Vishvakarma Mahavidyalaya Engineering College
