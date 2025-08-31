@@ -1,67 +1,84 @@
-📌 Flask + MongoDB Assignment
+# Project Title
 
-This is a simple Flask application connected with MongoDB Atlas that demonstrates:
+A brief description of what your project does and its purpose.
 
-Collecting user input via a form
+---
 
-Saving the input to MongoDB
+## 📂 Project Structure
 
-Displaying stored records on another page
+.
+├── templates/ # HTML templates (for Flask if applicable)
+├── app.py # Main application file
+├── data.json # JSON data file
+├── document.pdf # Project-related document
+├── README.md # Project documentation
 
-🚀 Features
+yaml
+Copy code
 
-Home page with a form to enter Name and Role
+---
 
-Stores the submitted data into MongoDB Atlas
+## 🚀 Features
 
-Redirects to a second page (/users) that lists all users
+- Load and manage data from `data.json`.
+- Web interface using Flask and Jinja templates (if Flask project).
+- Exports/uses PDF (`document.pdf`).
+- Simple and modular project structure.
 
-Clean and minimal Flask project structure
+---
 
-🛠️ Tech Stack
+## 🛠️ Installation & Setup
 
-Flask (Python web framework)
+1. **Clone the repository**  
+   ```bash
+   git clone https://github.com/your-username/your-repo.git
+   cd your-repo
+Create a virtual environment (optional but recommended)
 
-MongoDB Atlas (Cloud database)
-
-HTML (Frontend templates with Jinja2)
-
-📂 Project Structure
-flask-mongo-assignment/
-│
-├── app.py                # Main Flask app
-├── templates/
-│   ├── index.html        # User input form
-│   └── users.html        # Display all users
-├── requirements.txt      # Dependencies
-└── README.md             # Project documentation
-
-⚙️ Installation & Setup
-1️⃣ Clone the repository
-git clone https://github.com/pranaydodiya/flask-assignment.git
-cd flask-assignment
-
-2️⃣ Create virtual environment
+bash
+Copy code
 python -m venv venv
-venv\Scripts\activate   # For Windows
-# source venv/bin/activate  # For Linux/Mac
+source venv/bin/activate   # On Linux/Mac
+venv\Scripts\activate      # On Windows
+Install dependencies
 
-3️⃣ Install dependencies
+bash
+Copy code
 pip install -r requirements.txt
+Run the application
 
-4️⃣ Configure MongoDB Atlas
+bash
+Copy code
+python app.py
+📑 Usage
+Open the app in your browser at http://127.0.0.1:5000/.
 
-Create a free MongoDB Atlas cluster.
+The app will load data from data.json.
 
-Whitelist your IP address.
+You can update templates in the templates/ folder.
 
-Copy your connection string and update it inside app.py:
+Refer to document.pdf for detailed documentation.
 
-client = MongoClient("your_mongo_connection_string")
+📦 Requirements
+Create a requirements.txt file with the following (if Flask app):
 
-5️⃣ Run the application
-py app.py
+nginx
+Copy code
+flask
+Add more libraries if used.
 
+Generate it with:
 
-App will be running on:
-👉 http://127.0.0.1:5000
+bash
+Copy code
+pip freeze > requirements.txt
+🤝 Contributing
+Fork this repository
+
+Create your feature branch (git checkout -b feature-name)
+
+Commit changes (git commit -m 'Add new feature')
+
+Push to the branch (git push origin feature-name)
+
+Open a Pull Request
