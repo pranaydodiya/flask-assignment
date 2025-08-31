@@ -87,5 +87,4 @@ Future Improvements
 Author
 ------
 Pranay Dodiya
-B.Tech Information Technology (2022-2026)
-Birla Vishvakarma Mahavidyalaya Engineering College
+
